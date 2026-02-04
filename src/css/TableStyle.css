@@ -1,0 +1,54 @@
+/* Custom styles for Criteria and Committee tables */
+.criteria-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid #a67c00 !important;
+  /* Gold/Brown border color from image */
+  font-family: sans-serif;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.criteria-table td,
+.criteria-table th {
+  border: 1px solid #a67c00 !important;
+  padding: 12px 15px;
+  vertical-align: middle;
+  color: #333;
+  font-size: 15px;
+}
+
+/* Alternating row colors */
+.criteria-table tr:nth-child(odd) {
+  background-color: #e6e6e6 !important;
+  /* Light gray for odd rows */
+}
+
+.criteria-table tr:nth-child(even) {
+  background-color: #ffffff !important;
+  /* White for even rows */
+}
+
+/* Hover effect */
+.criteria-table tr:hover {
+  background-color: #f1f1f1 !important;
+}
+
+/* Specific styling for the "View" link cell to center it if needed, mainly strictly inherited though */
+.criteria-table a {
+  color: #000;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.criteria-table a:hover {
+  text-decoration: underline;
+  color: #a67c00;
+}
+
+/* Responsive wrapper if needed */
+.table-responsive {
+  overflow-x: auto;
+  margin-bottom: 20px;
+}
