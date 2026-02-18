@@ -123,7 +123,7 @@ const Footer = () => {
                         <div className="row align-items-center">
                             <div className="col-md-12">
                                 <p style={{ textAlign: 'center' }}>
-                                    Copyright © 2025 Sri Shanmugha College Of Nursing For Women All Rights Reserved. Designed by <a href="https://www.vaaraahitech.com/" target="_blank"><img src="/images/logo.png" width="80" height="50" alt="Vaaraahi Tech" /></a>
+                                    Copyright © 2026 Sri Shanmugha College Of Nursing For Women All Rights Reserved. 
                                 </p>
                             </div>
                         </div>

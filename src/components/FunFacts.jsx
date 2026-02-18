@@ -1,85 +1,44 @@
 import React from 'react';
 
 const FunFacts = () => {
+    const facts = [
+        { id: 1, icon: "/images/shanmuga/icon/nurse.png", count: "250", title: "Total Students" },
+        { id: 2, icon: "/images/shanmuga/icon/education.png", count: "25", title: "Faculties" },
+        { id: 3, icon: "/images/shanmuga/icon/award.png", count: "4", title: "Academic Awards" },
+        { id: 4, icon: "/images/shanmuga/icon/rating.png", count: "9", title: "Years Experience" },
+    ];
+
     return (
         <section className="section-lg_tb" style={{ paddingTop: '40px' }}>
             <div className="container">
                 <div className="counter-three-bg">
-                    <div className="row">
-                        <div className="col-lg-3 col-md-6">
-                            <div className="pbminfotech-ele-fid-style-7">
-                                <div className="pbmit-fld-contents">
-                                    <div className="pbmit-sbox-icon-wrapper">
-                                        <img src="/images/shanmuga/icon/nurse.png" alt="" />
-                                    </div>
-                                    <div className="pbmit-fld-wrap">
-                                        <h4 className="pbmit-fid-inner">
-                                            <span className="pbmit-number-rotate">250</span>
-                                            <span className="pbmit-fid"><sup> +</sup></span>
-                                        </h4>
-                                        <div className="pbmit-fid-title">
-                                            <span>Total Students</span>
+                    {/* Added justify-content-center for tab/mobile centering */}
+                    <div className="row justify-content-center">
+                        {facts.map((item) => (
+                            <div key={item.id} className="col-lg-3 col-md-6 col-sm-12 mb-4">
+                                {/* Added text-center here */}
+                                <div className="pbminfotech-ele-fid-style-7 text-center">
+                                    <div className="pbmit-fld-contents">
+                                        <div className="pbmit-sbox-icon-wrapper mb-3">
+                                            <img 
+                                                src={item.icon} 
+                                                alt={item.title} 
+                                                style={{ margin: '0 auto' }} // Ensures image centers in its container
+                                            />
+                                        </div>
+                                        <div className="pbmit-fld-wrap">
+                                            <h4 className="pbmit-fid-inner">
+                                                <span className="pbmit-number-rotate">{item.count}</span>
+                                                <span className="pbmit-fid"><sup> +</sup></span>
+                                            </h4>
+                                            <div className="pbmit-fid-title">
+                                                <span>{item.title}</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="col-lg-3 col-md-6">
-                            <div className="pbminfotech-ele-fid-style-7">
-                                <div className="pbmit-fld-contents">
-                                    <div className="pbmit-sbox-icon-wrapper">
-                                        <img src="/images/shanmuga/icon/education.png" alt="" />
-                                    </div>
-                                    <div className="pbmit-fld-wrap">
-                                        <h4 className="pbmit-fid-inner">
-                                            <span className="pbmit-number-rotate">25</span>
-                                            <span className="pbmit-fid"><sup> +</sup></span>
-                                        </h4>
-                                        <div className="pbmit-fid-title">
-                                            <span>Faculties</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-3 col-md-6">
-                            <div className="pbminfotech-ele-fid-style-7">
-                                <div className="pbmit-fld-contents">
-                                    <div className="pbmit-sbox-icon-wrapper">
-                                        <img src="/images/shanmuga/icon/award.png" alt="" />
-                                    </div>
-                                    <div className="pbmit-fld-wrap">
-                                        <h4 className="pbmit-fid-inner">
-                                            <span className="pbmit-number-rotate">4</span>
-                                            <span className="pbmit-fid"><sup> +</sup></span>
-                                        </h4>
-                                        <div className="pbmit-fid-title">
-                                            <span>Academic Awards</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-3 col-md-6">
-                            <div className="pbminfotech-ele-fid-style-7">
-                                <div className="pbmit-fld-contents">
-                                    <div className="pbmit-sbox-icon-wrapper">
-                                        <img src="/images/shanmuga/icon/rating.png" alt="" />
-                                    </div>
-                                    <div className="pbmit-fld-wrap">
-                                        <h4 className="pbmit-fid-inner">
-                                            <span className="pbmit-number-rotate">9</span>
-                                            <span className="pbmit-fid"><sup> +</sup></span>
-                                        </h4>
-                                        <div className="pbmit-fid-title">
-                                            <span>Years Experience</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-1 col-md-6">
-                        </div>
+                        ))}
                     </div>
                 </div>
             </div>

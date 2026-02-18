@@ -268,11 +268,11 @@ const ProgrammesOffered = () => {
                                         <h2> FACILITIES</h2>
                                         <div className="all-post-list pbmit-bg-color-global">
                                             <ul>
-                                                <li><Link to="/laboratory.html">CLINICAL LABORATORY </Link></li>
-                                                <li><Link to="/hostel.html">GIRLS HOSTEL </Link></li>
-                                                <li><Link to="/food.html">ISTHARA SMART FOOD COURT </Link></li>
-                                                <li ><Link to="/smart-classroom.html">SMART CLASSROOM </Link></li>
-                                                <li><Link to="/transport.html">TRANSPORTATION</Link></li>
+                                                <li><Link to="/laboratory">CLINICAL LABORATORY </Link></li>
+                                                <li><Link to="/hostel">GIRLS HOSTEL </Link></li>
+                                                <li><Link to="/food">ISTHARA SMART FOOD COURT </Link></li>
+                                                <li ><Link to="/smart-classroom">SMART CLASSROOM </Link></li>
+                                                <li><Link to="/transport">TRANSPORTATION</Link></li>
 
                                             </ul>
                                         </div>
